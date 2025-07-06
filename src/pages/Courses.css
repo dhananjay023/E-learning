@@ -1,0 +1,194 @@
+/* Premium Purple-Themed E-learning Landing Page CSS - Extended for Courses Page */
+
+:root {
+  --primary-color: #eeecf3;
+  --primary-light: #a18aff;
+  --primary-dark: #f2f1f6;
+  --bg-light: #f9f9fc;
+  --text-color: #1a1a1a;
+  --muted-text: #666;
+  --card-bg: #ffffff;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+}
+body{
+  background-color: white;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+background-color: #fff;
+/* color: var(--text-color); */
+line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+}
+
+.welcome {
+  background: #fff;
+
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow);
+}
+
+
+.welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.welcome-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.history-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lessons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.lesson-card {
+  background: #fff;
+  border-radius: var(--radius);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(127, 90, 240, 0.3);
+}
+
+.lesson-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.lesson-content {
+  padding: 1rem;
+}
+
+.lesson-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.lesson-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.author-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.progress {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+
+.categories {
+  margin-top: 4rem;
+}
+
+.categories-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(127, 90, 240, 0.3);
+}
+
+.icon-box {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.category-desc {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+@media (max-width: 768px) {
+  .welcome-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .lessons-grid {
+    justify-content: center;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

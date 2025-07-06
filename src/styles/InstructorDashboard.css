@@ -1,0 +1,20 @@
+.instructor-dashboard {
+  padding: 2rem;
+}
+
+.upload-section input, textarea {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.courses-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.course-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
